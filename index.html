@@ -189,7 +189,9 @@
     background-size:250% 100%;
     -webkit-background-clip:text;background-clip:text;color:transparent;
     animation:shimmer 5s linear infinite;
+    text-shadow:0 2px 20px rgba(0,0,0,.85), 0 0 60px rgba(0,0,0,.5);
   }
+  .hero h1 .line span{text-shadow:0 2px 16px rgba(0,0,0,.6);}
   @keyframes shimmer{
     0%{background-position:200% 0;}
     100%{background-position:-50% 0;}
@@ -693,6 +695,10 @@
   .detail-nav-prev{left:10px;}
   .detail-nav-next{right:10px;}
 
+  .boutique-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
+
+  .boutique-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
+
   /* ===== REVEAL ===== */
   .reveal{opacity:0;transform:translateY(32px);transition:opacity .8s ease,transform .8s ease;}
   .reveal.in{opacity:1;transform:translateY(0);}
@@ -722,6 +728,8 @@
       max-width:500px;
       margin:0 auto;
     }
+    .boutique-grid{grid-template-columns:1fr;}
+    .boutique-grid{grid-template-columns:1fr;}
     .detail-gallery{
       min-height:280px;
       height:280px;
@@ -920,8 +928,8 @@
 
 <!-- ================= NOTRE BOUTIQUE ================= -->
 <section style="border-top:1px solid var(--hairline);">
-  <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;">
-    <div class="reveal">
+    <div class="boutique-grid">
+      <div class="reveal">
       <span class="eyebrow">Notre boutique</span>
       <h2 style="font-family:var(--display);font-weight:600;font-size:clamp(1.8rem,3.5vw,2.8rem);margin:14px 0 20px;">Visitez-nous à Tétouan</h2>
       <p style="color:var(--ivory-dim);line-height:1.8;font-size:1rem;">Au cœur de Tétouan, notre bijouterie vous accueille dans un espace chaleureux dédié à l'or 18K. Chaque pièce exposée est sélectionnée avec soin pour sa qualité et son éclat. Que vous cherchiez une bague, un collier ou un ensemble sur mesure, notre équipe est là pour vous conseiller avec passion et savoir-faire.</p>
